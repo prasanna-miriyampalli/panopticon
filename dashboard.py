@@ -9,7 +9,7 @@ import streamlit as st
 
 from features import score_readings
 
-MODEL_DIR = Path("model")
+MODEL_DIR = Path(".")
 model = joblib.load(MODEL_DIR / "model.joblib")
 cfg = json.loads((MODEL_DIR / "config.json").read_text())
 
